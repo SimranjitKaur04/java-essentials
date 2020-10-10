@@ -1,0 +1,23 @@
+public class Employee
+{
+int age;
+String name;
+String city;
+     public static void main(String []args)
+     {
+         Employee e=new Employee();
+         Employee e1=new Employee();
+         e.age=20;
+         e.name="The name is simran";
+         e.city="The city is kolkata";
+         e1.age=30;
+         e1.name="The name is deepika";
+         e1.city="The city is kolkata";
+     System.out.println(e.name);
+     System.out.println(e.age);
+     System.out.println(e.city);
+     System.out.println(e1.name);
+     System.out.println(e1.age);
+     System.out.println(e1.city);
+     }
+}
