@@ -1,0 +1,48 @@
+2.
+import java.util.*;
+class Main
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int[]arr=new int[5];
+        int i=0;
+        System.out.println("Enter the array elements");
+        for (i=0;i<5;i++)
+        {
+            arr[i]=sc.nextInt();
+        }
+        for (i=0;i<5;i++)
+        {
+            if (i%2!=0)
+            System.out.println("The odd nos. are "+arr[i]);
+        }
+    }
+    
+}.
+
+
+
+
+3.
+import java.util.*;
+public class Main
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int[] arr=new int[5];
+        int i=0,sum=0;
+        System.out.println("Enter the array elements");
+        for (i=0;i<5;i++)
+        {
+            arr[i]=sc.nextInt();
+        }
+        for (i=0;i<5;i++)
+        {
+          sum=sum+arr[i];
+        }
+        System.out.println("The sum is"+sum);
+        
+    }
+}
