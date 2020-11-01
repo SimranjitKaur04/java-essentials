@@ -1,0 +1,76 @@
+import java.util.*;
+class employee
+  {
+     String name,des;
+     int age,sal;
+      void read()
+      {
+          Scanneer sc = new Scanner(System.in);
+          System.out.println("enter name,salary,designation");
+          name=sc.nextLine();
+          age=sc.nextInt();
+          sal=sc.nextInt();
+          des=sc.nextLine();
+      }
+      void display()
+      {
+         System.out.println("name="+name);
+         System.out.println("age="+age");
+         System.out.println("designation="+des);
+      }
+  }
+  class doctor extends employee
+  {
+      void read()
+      { 
+          Scanneer sc = new Scanner(System.in);
+          System.out.println("enter the details of doctor")
+          super.read();
+      }
+      void display()
+      {
+          superdisplay();
+      }
+  }
+  class engineer extends employee
+  {
+      void read()
+      {
+        Scanneer sc = new Scanner(System.in);
+        System.out.println("enter the details of engi");
+        super.read();
+      }
+      void display()
+      {
+          superdisplay();
+      }
+  }
+  class pilot extends employee
+  {
+      void read()
+      {
+        Scanneer sc = new Scanner(System.in);
+          System.out.println("enter the details of pilot")
+          super.read();
+      }
+      void display()
+      {
+          superdisplay();
+      }
+  }
+  class job
+  {
+      public static void main()
+      {
+         Scanner sc=new Scanner(System.in);
+          doctor obj=new doctor();
+          engineer obje=new engineer();
+          pilot objec=new pilot();
+          obj.read();
+          obje.read();
+          objec.read();
+          obj.display();
+          obje.display();
+          objec.display();
+      }
+  }
